@@ -1,11 +1,11 @@
-apiVersion: v1 # Версия API
-kind: Pod # Объект, который создаем
+apiVersion: v1 
+kind: Pod
 metadata:
  name: web
- labels: # Метки в формате key: value
+ labels: 
   key: value
-spec: # Описание Pod
- containers: # Описание контейнеров внутри Pod
+spec: 
+ containers: 
  - name: web
    image: biomack/webapp:1.0
    volumeMounts:
