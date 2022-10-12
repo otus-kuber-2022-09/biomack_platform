@@ -10,7 +10,7 @@ spec:
     emptyDir: {}
   containers: 
   - name: web
-    image: ga66a/otus:kubernetes-intro
+    image: biomack/otus-2-web:1.0
     volumeMounts:
     - name: app
       mountPath: /app
