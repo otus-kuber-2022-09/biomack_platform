@@ -10,7 +10,7 @@ spec:
     emptyDir: {}
   containers: 
   - name: web
-    image: biomack/webapp:1.0
+    image: biomack/webapp:1.1
     volumeMounts:
     - name: app
       mountPath: /app
