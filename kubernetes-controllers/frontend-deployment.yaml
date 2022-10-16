@@ -16,7 +16,7 @@ spec:
      spec:
         containers:
         - name: server
-          image: biomack/otus-paymentservice_amd:1.0
+          image: biomack/hipster-frontend:v0.0.2
           env:
           - name: PORT
             value: "8080"
