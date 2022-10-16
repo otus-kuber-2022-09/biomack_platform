@@ -16,10 +16,16 @@ spec:
 
   containers:
     - name: main
-      image: biomack/otus-2-web_amd:1.1
+      image: biomack/otus-2-web:1.1
       volumeMounts:
         - name: app
           mountPath: /app
+      readinessProbe: # Добавим проверку готовности
+        httpGet: # веб-сервера отдавать
+           path: /index.html # контент
+           port: 80
+      livenessProbe:
+          tcpSocket: { port: 8000 }
 
   volumes:
     - name: app
